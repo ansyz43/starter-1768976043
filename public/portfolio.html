@@ -210,10 +210,7 @@
   .foot{padding:36px 0 48px;margin-top:46px;border-top:1px solid var(--line-soft);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:var(--dim)}
   @media(max-width:820px){
     .aurora{display:none}
-    .bento .bmedia::before,.wcell::before{content:"▶";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
-      z-index:3;width:52px;height:52px;border-radius:50%;background:rgba(4,5,7,.55);color:#fff;font-size:17px;
-      display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.25);pointer-events:none}
-    .bento .playing .bmedia::before,.bento .bmedia.playing::before,.wcell.playing::before{display:none}
+
     .badge,.live,.wlab,.phcap,.k4badge,.kplay span{backdrop-filter:none;-webkit-backdrop-filter:none}
     .pf{background-image:none}
   }
@@ -255,7 +252,7 @@
     <div class="rv d2">
       <div class="phwrap">
         <div class="phone">
-          <video autoplay muted loop playsinline preload="auto" src="media/loops/hero.mp4" poster="media/loops/hero.jpg"></video>
+          <video autoplay muted loop playsinline data-vsrc="media/loops/hero.mp4" data-msrc="media/loops/m/hero.mp4" poster="media/loops/hero.jpg"></video>
           <div class="phcap" data-i="cap1"><b>AI-generated</b> · one consistent character</div>
         </div>
         <div class="beam"><i></i><i class="b2"></i></div>
@@ -274,35 +271,35 @@
     <div class="bento">
       <div class="bcard w2 rv">
         <div class="bmedia"><span class="badge">music video · one character</span><span class="live">ai generated</span>
-          <video muted loop playsinline preload="none" data-vsrc="media/loops/laundry.mp4" poster="media/loops/laundry.jpg"></video></div>
+          <video muted loop playsinline preload="none" data-vsrc="media/loops/laundry.mp4" data-msrc="media/loops/m/laundry.mp4" poster="media/loops/laundry.jpg"></video></div>
         <div class="bbody"><h4 data-i="c1h">Cinematic music video — same hero in every scene</h4>
           <p data-i="c1p">Full 100-second clip: laundromat, night streets, outer space — zero identity drift between scenes.</p>
           <div class="res" data-i="c1r">→ character lock · film-grade shots · beat-synced edit</div></div>
       </div>
       <div class="bcard rv d1">
         <div class="bmedia"><span class="badge">ai influencer</span><span class="live">ai generated</span>
-          <video muted loop playsinline preload="none" data-vsrc="media/loops/girl.mp4" poster="media/loops/girl.jpg"></video></div>
+          <video muted loop playsinline preload="none" data-vsrc="media/loops/girl.mp4" data-msrc="media/loops/m/girl.mp4" poster="media/loops/girl.jpg"></video></div>
         <div class="bbody"><h4 data-i="c2h">AI persona that moves</h4>
           <p data-i="c2p">She laughs, walks, turns — img2video on a locked identity.</p>
           <div class="res" data-i="c2r">→ IG / Fanvue-ready</div></div>
       </div>
       <div class="bcard rv">
         <div class="bmedia"><span class="badge">lip-sync avatar</span>
-          <video muted loop playsinline preload="none" data-vsrc="media/loops/verena.mp4" poster="media/loops/verena.jpg"></video></div>
+          <video muted loop playsinline preload="none" data-vsrc="media/loops/verena.mp4" data-msrc="media/loops/m/verena.mp4" poster="media/loops/verena.jpg"></video></div>
         <div class="bbody"><h4 data-i="c3h">Talking avatars</h4>
           <p data-i="c3p">Lip-synced spokespersons for explainers &amp; sales videos.</p>
           <div class="res" data-i="c3r">→ any language · any script</div></div>
       </div>
       <div class="bcard rv d1">
         <div class="bmedia"><span class="badge">brand mascot · 3d</span>
-          <video muted loop playsinline preload="none" data-vsrc="media/loops/mascot.mp4" poster="media/loops/mascot.jpg"></video></div>
+          <video muted loop playsinline preload="none" data-vsrc="media/loops/mascot.mp4" data-msrc="media/loops/m/mascot.mp4" poster="media/loops/mascot.jpg"></video></div>
         <div class="bbody"><h4 data-i="c4h">Mascots &amp; character brands</h4>
           <p data-i="c4p">Film-grade 3D characters: concept → episodes.</p>
           <div class="res" data-i="c4r">→ full character system</div></div>
       </div>
       <div class="bcard rv d2">
         <div class="bmedia"><span class="badge">short-form</span>
-          <video muted loop playsinline preload="none" data-vsrc="media/loops/music.mp4" poster="media/loops/music.jpg"></video></div>
+          <video muted loop playsinline preload="none" data-vsrc="media/loops/music.mp4" data-msrc="media/loops/m/music.mp4" poster="media/loops/music.jpg"></video></div>
         <div class="bbody"><h4 data-i="c5h">Beat-synced shorts</h4>
           <p data-i="c5p">Music clips cut to the beat, kinetic captions.</p>
           <div class="res" data-i="c5r">→ artists · labels</div></div>
@@ -312,17 +309,17 @@
     
     <div class="wallh rv"><h3 data-i="w0">AI product ads</h3><span class="rule" style="flex:1;height:1px;background:var(--line);align-self:center"></span><span class="hint" data-i="wh">hover the wall →</span></div>
     <div class="wall rv">
-      <div class="wcell"><video muted loop playsinline preload="none" data-vsrc="media/loops/choco.mp4" poster="media/loops/choco.jpg"></video><div class="wlab" data-i="w1"><b>snack spot</b> · one photo → commercial</div></div>
-      <div class="wcell"><video muted loop playsinline preload="none" data-vsrc="media/loops/ugc.mp4" poster="media/loops/ugc.jpg"></video><div class="wlab" data-i="w2"><b>ugc creator</b> · try-on ad, fully AI</div></div>
-      <div class="wcell"><video muted loop playsinline preload="none" data-vsrc="media/loops/frog.mp4" poster="media/loops/frog.jpg"></video><div class="wlab" data-i="w3"><b>unboxing</b> · hands-on product demo</div></div>
+      <div class="wcell"><video muted loop playsinline preload="none" data-vsrc="media/loops/choco.mp4" data-msrc="media/loops/m/choco.mp4" poster="media/loops/choco.jpg"></video><div class="wlab" data-i="w1"><b>snack spot</b> · one photo → commercial</div></div>
+      <div class="wcell"><video muted loop playsinline preload="none" data-vsrc="media/loops/ugc.mp4" data-msrc="media/loops/m/ugc.mp4" poster="media/loops/ugc.jpg"></video><div class="wlab" data-i="w2"><b>ugc creator</b> · try-on ad, fully AI</div></div>
+      <div class="wcell"><video muted loop playsinline preload="none" data-vsrc="media/loops/frog.mp4" data-msrc="media/loops/m/frog.mp4" poster="media/loops/frog.jpg"></video><div class="wlab" data-i="w3"><b>unboxing</b> · hands-on product demo</div></div>
     </div>
 
 
     <div class="wallh rv"><h3 data-i="k0">Cinematic 4K drops</h3><span style="flex:1;height:1px;background:var(--line);align-self:center"></span><span class="hint" data-i="kh">click = sound · full 4K</span></div>
     <div class="k4 rv">
-      <div class="kcell" data-full="media/k1.mp4"><span class="k4badge">4K · 15s</span><video muted loop playsinline preload="none" data-vsrc="media/loops/k1.mp4" poster="media/loops/k1.jpg"></video><div class="kplay"><span>▶</span></div><div class="wlab" data-i="kk1"><b>dark fantasy</b> · knights &amp; blossom</div></div>
-      <div class="kcell" data-full="media/k2.mp4"><span class="k4badge">4K · 15s</span><video muted loop playsinline preload="none" data-vsrc="media/loops/k2.mp4" poster="media/loops/k2.jpg"></video><div class="kplay"><span>▶</span></div><div class="wlab" data-i="kk2"><b>ocean epic</b> · the kraken</div></div>
-      <div class="kcell" data-full="media/k3.mp4"><span class="k4badge">4K · 15s</span><video muted loop playsinline preload="none" data-vsrc="media/loops/k3.mp4" poster="media/loops/k3.jpg"></video><div class="kplay"><span>▶</span></div><div class="wlab" data-i="kk3"><b>mirror world</b> · shattered reality</div></div>
+      <div class="kcell" data-full="media/k1.mp4"><span class="k4badge">4K · 15s</span><video muted loop playsinline preload="none" data-vsrc="media/loops/k1.mp4" data-msrc="media/loops/m/k1.mp4" poster="media/loops/k1.jpg"></video><div class="kplay"><span>▶</span></div><div class="wlab" data-i="kk1"><b>dark fantasy</b> · knights &amp; blossom</div></div>
+      <div class="kcell" data-full="media/k2.mp4"><span class="k4badge">4K · 15s</span><video muted loop playsinline preload="none" data-vsrc="media/loops/k2.mp4" data-msrc="media/loops/m/k2.mp4" poster="media/loops/k2.jpg"></video><div class="kplay"><span>▶</span></div><div class="wlab" data-i="kk2"><b>ocean epic</b> · the kraken</div></div>
+      <div class="kcell" data-full="media/k3.mp4"><span class="k4badge">4K · 15s</span><video muted loop playsinline preload="none" data-vsrc="media/loops/k3.mp4" data-msrc="media/loops/m/k3.mp4" poster="media/loops/k3.jpg"></video><div class="kplay"><span>▶</span></div><div class="wlab" data-i="kk3"><b>mirror world</b> · shattered reality</div></div>
     </div>
 
     <div class="proof rv">
@@ -416,26 +413,40 @@ function lbxClose(){var b=document.getElementById("lbx"),v=document.getElementBy
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in');});},{threshold:.12});
   document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
   var isMob=window.matchMedia('(max-width:820px)').matches||/iPhone|iPad|Android/i.test(navigator.userAgent);
-  var lazyv=document.querySelectorAll('.bento video,.wall video');
-  var k4v=document.querySelectorAll('.k4 video');
-  function vsrc(v){return v.getAttribute('data-vsrc')||v.getAttribute('src');}
+  var vids=[].slice.call(document.querySelectorAll('video[data-vsrc]'));
+  function pfx(v){return isMob&&v.getAttribute('data-msrc')?v.getAttribute('data-msrc'):v.getAttribute('data-vsrc');}
   if(!isMob){
-    var all=[].slice.call(lazyv).concat([].slice.call(k4v));
-    all.forEach(function(v){if(!v.src&&v.getAttribute('data-vsrc'))v.src=v.getAttribute('data-vsrc');});
+    vids.forEach(function(v){if(!v.src)v.src=pfx(v);});
+    var hv=document.querySelector('.phone video');if(hv){var p0=hv.play();if(p0&&p0.catch)p0.catch(function(){});}
     var vio=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;
       if(e.isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){});}else{v.pause();}});},{threshold:.25});
-    all.forEach(function(v){vio.observe(v);});
+    vids.forEach(function(v){if(!v.closest('.phone'))vio.observe(v);});
   }else{
-    var cur=null;
-    lazyv.forEach(function(v){
-      var host=v.parentNode;
-      host.addEventListener('click',function(){
-        if(cur&&cur!==v){cur.pause();cur.parentNode.classList.remove('playing');if(cur.src){cur.removeAttribute('src');cur.load();}}
-        if(!v.src){v.src=vsrc(v);}
-        if(v.paused){var p=v.play();if(p&&p.catch)p.catch(function(){});host.classList.add('playing');cur=v;}
-        else{v.pause();host.classList.remove('playing');}
+    var pio=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){var v=e.target;if(!v.src){v.src=pfx(v);v.load();}pio.unobserve(v);}
+    });},{rootMargin:'160% 0px'});
+    vids.forEach(function(v){pio.observe(v);});
+    var tick=false;
+    function pick(){
+      tick=false;
+      var mid=window.innerHeight/2,best=null,bd=1e9;
+      vids.forEach(function(v){var r=v.getBoundingClientRect();
+        if(r.bottom<40||r.top>window.innerHeight-40)return;
+        var d=Math.abs((r.top+r.bottom)/2-mid);
+        if(d<bd){bd=d;best=v;}});
+      vids.forEach(function(v){
+        if(v===best){if(!v.src){v.src=pfx(v);}if(v.paused){var p=v.play();if(p&&p.catch)p.catch(function(){});}}
+        else if(!v.paused){v.pause();}
       });
-    });
+    }
+    function onS(){if(!tick){tick=true;requestAnimationFrame(pick);}}
+    window.addEventListener('scroll',onS,{passive:true});
+    window.addEventListener('resize',onS,{passive:true});
+    vids.forEach(function(v){v.parentNode.addEventListener('click',function(){
+      if(v.closest('.kcell'))return;
+      if(v.paused){if(!v.src)v.src=pfx(v);var p=v.play();if(p&&p.catch)p.catch(function(){});}
+    });});
+    setTimeout(pick,300);
   }
   document.querySelectorAll('.kcell').forEach(function(c){
     c.addEventListener('click',function(){
